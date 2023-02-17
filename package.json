@@ -1,0 +1,19 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "This is a CMS-style blog site, where developers can publish their blog posts and comment on other developers’ posts as well. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crystal-coding-time/redesigned-potato.git"
+  },
+  "author": "\"Eli Ter Keurst & edX\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crystal-coding-time/redesigned-potato/issues"
+  },
+  "homepage": "https://github.com/crystal-coding-time/redesigned-potato#readme"
+}
