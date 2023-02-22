@@ -1,50 +1,49 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Product extends Model {}
+class Comment extends Model {}
 
-Product.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
-    product_name: {
+ 
+    comment_description: {
       type: DataTypes.STRING,
-      allowNull: false
     },
-    price: {
-      type: DataTypes.DECIMAL,
+    date_created: {
+      type: DataTypes.DATE,
       allowNull: false,
-      validate: {
-        isDecimal: true
-      }
+      defaultValue: DataTypes.NOW,
     },
-    stock: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 10,
-      Validate: {
-        isNumeric: true
-      }
-    },
-    category_id: {
+    
+    blog_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'category',
-        key: 'id'
-      }
-    }
+        model: 'blog',
+        key: 'id',
+      },
+    },
+
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product',
+    modelName: 'comment',
   }
 );
 
-module.exports = Product;
+module.exports = Comment;
