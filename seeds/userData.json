@@ -1,17 +1,17 @@
 [
-    {
-      "blog_title": "Wild Rolls",
-      "description": "A mobile dice rolling app that allows users to roll dice and save their rolls for later use. Great for tabletop games like Dungeons and Dragons!"
-      
-    },
-    {
-      "blog_title": "Panic Alarm",
-      "description": "An alarm app that wakes the user with a unique alarm tone, locks the users phone, and requires them to solve a simple puzzle to unlock the phone and silence the alarm! Great for those who need to get up early!"
-     
-    },
-    {
-      "blog_title": "Pizza Topping Generator",
-      "description": "An app that generates a random pizza topping for the user. Great for those who can't decide what to put on their pizza!"
-     
-    }
+  {
+   
+    "username": "ar0ra",
+    "password": "s3cr3tpassw0rd"
+  },
+  {
+    
+    "username": "l3mongrab",
+    "password": "adventuret1m3"
+  },
+  {
+    
+    "username": "ak1ra",
+    "password": "b1kesl1de"
+  }
 ]

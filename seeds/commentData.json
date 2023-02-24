@@ -1,0 +1,17 @@
+[
+    {
+      "blog_id": 1,
+      "comment_description": "Such a useful app and has completely streamlined our TTRPG sessions.",
+      "user_id": 1
+    },
+    {
+      "blog_id": 2,
+      "comment_description": "I both love and hate this app.",
+      "user_id": 2
+    },
+    {
+      "blog_id": 3,
+      "comment_description": "We eat a lot of pizza and love all the fun new topping ideas thanks to this app.",
+      "user_id": 3
+    }
+  ]
