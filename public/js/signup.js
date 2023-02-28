@@ -1,13 +1,17 @@
 const handleFormSubmit = async (event, endpoint, redirectUrl) => {
   event.preventDefault();
 
-  const form = event.target;
-  const formData = new FormData(form);
+const usernameInput = document.querySelector('#username-signup').value.trim();
+const passwordInput = document.querySelector('#password-signup').value.trim();
 
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify({
+      username: usernameInput,
+      password: passwordInput,
+      }),
+      headers: { 'Content-Type': 'application/json'}
     });
 
     if (response.ok) {

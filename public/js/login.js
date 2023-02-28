@@ -1,4 +1,3 @@
-
 const handleFormSubmit = async (event, endpoint, redirectUrl) => {
     event.preventDefault();
   
